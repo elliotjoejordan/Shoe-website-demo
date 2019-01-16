@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Web Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+        <link href="sticky-footer-navbar.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: white;
+                font-family: font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                font:Georgia;
+                padding-top: 13px;
+            }
+            #to{
+                colour:#A9A9A9;
+                display:none;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            p {word-wrap:break-word;}
+            hr {
+                margin: 2px 0;
+                border: 2px solid #A9A9A9;
+            }
+            @media screen and (max-width: 350px) {
+                body {
+                    padding-left: 0px;
+                }
+            }
+        </style>
+        <script language="javascript">
+        function changeImage() {
+            if (document.getElementById("imgClickAndChange").src == "file:///Users/elliotjordan/Desktop/AND_Digital/images/shoe.png")
+            {
+                document.getElementById("imgClickAndChange").src = "images/shoeBack.png";
+            }
+            else
+                {
+                    document.getElementById("imgClickAndChange").src = "images/shoe.png";
+                }
+            }
+        function changeImage2() {
+            if (document.getElementById("imgClickAndChange2").src == "file:///Users/elliotjordan/Desktop/AND_Digital/images/brown1.png")
+                {
+                    document.getElementById("imgClickAndChange2").src = "images/brown2.png";
+                }
+            else
+                {
+                    document.getElementById("imgClickAndChange2").src = "images/brown1.png";
+                }
+            }
+</script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a style="color: #FFD700;" class="navbar-brand" href="index.html">Golden Shoe</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                  <li><a style="color:black" href="index.html">Browse</a></li>
+                  <li><a style="color:black"  href="index.html">New In</a></li>
+                  <li><a style="color:black" href="bag.html">Bag</a></li>
+                  <li><a style="color:black" href="index.html">Help</a></li>
+                  <li><a style="color:black" href=""></a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right" style="padding-left: 10px;">
+                  <li>
+                  </li>
+                  <li>
+              <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </li>
+        <li></li>
+      </ul>
+            </div>
+          </div>
+        </nav>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3" style="background-color:white;"></div>
+            <div class="col-sm-6" style="background-color:white;">
+                <h2><center>Shopping Bag</center></h2>
+                <img width="15%" src="images/bag.png" style="margin: auto; display: block;">
+                <div style="height: 1vmax"></div>
+                <center><p>Here you will find all the items in your shopping bag. Feel free to edit your bag or add new styles and sizes.</p></center>
+                <div style="height: 1vmax"></div>
+                <center><p>Returns are free, as well as delivery on orders over <b>$100</b>, so add similar sizes to try at home!</p></center>
+                <div style="height: 2vmax"></div>
+            </div>
+            <div class="col-sm-3" style="background-color:white;"></div>
+        </div>
+      <div class="row">
+          <div class="col-sm-1" style="background-color:white;"></div>
+          <div class="col-sm-10" style="background-color:grey;">
+              <div style="height: 0.5vmax"></div>
+          </div>
+          <div class="col-sm-1" style="background-color:white;"></div>
+      </div>
+      <div class="row">
+          <div class="col-sm-1" style="background-color:white;"></div>
+        <div class="col-sm-2" style="background-color:white;">
+            <img width="100%" src="images/shoe.png" style="margin: auto; display: block;" id="imgClickAndChange" onclick="changeImage()">
+        </div>
+        <div class="col-sm-2" style="background-color:white;">
+            <h4>Gucci</h4>
+            <p style="color:grey;">Ace leather sneakers</p>
+            <p>Size: EU 41 / UK 8</p>
+            <p style="color:grey;">item no.: P00220102</p>
+            <p>remove</p>
+        </div>
+        <div class="col-sm-1" style="background-color:white;">
+            <br>
+            <button style="background-color:white;width:150px;">Add Size Above</button>
+            <br>
+            <br>
+            <button style="background-color:white;width:150px;">Add Size Below</button>
+        </div>
+        <div class="col-sm-3" style="background-color:white;"></div>
+        <div class="col-sm-2" style="background-color:white;">
+            <br>
+            <p>Subtotal : $450</p>
+            <br>
+            <p>Quantity: <input type="number" value="1" style="width:50px;"></p>
+        </div>
+        <div class="col-sm-1" style="background-color:white;"></div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-sm-1" style="background-color:white;"></div>
+        <div class="col-sm-2" style="background-color:white;">
+            <img width="100%" src="images/brown1.png" style="margin: auto; display: block;" id="imgClickAndChange2" onclick="changeImage2()">
+        </div>
+        <div class="col-sm-2" style="background-color:white;">
+            <h4>Adidas</h4>
+            <p style="color:grey;">Brown Suede sneakers</p>
+            <p>Size: EU 45 / UK 10</p>
+            <p style="color:grey;">item no.: P10560685</p>
+            <p>remove</p>
+        </div>
+        <div class="col-sm-1" style="background-color:white;">
+            <br>
+            <button style="background-color:white;width:150px;">Add Size Above</button>
+            <br>
+            <br>
+            <button style="background-color:white;width:150px;">Add Size Below</button>
+        </div>
+        <div class="col-sm-3" style="background-color:white;"></div>
+        <div class="col-sm-2" style="background-color:white;">
+            <br>
+            <p>Subtotal : $50</p>
+            <br>
+            <p>Quantity: <input type="number" value="1" style="width:50px;"></p>
+        </div>
+        <div class="col-sm-1" style="background-color:white;"></div>
+      </div>
+      <div class="row">
+          <div class="col-sm-9" style="background-color:white;">
+              <div style="height:4vmax"></div>
+          </div>
+        <div class="col-sm-2" style="background-color:white;">
+            <br>
+            <p>Total : $500</p>
+            <br>
+            <center><button onclick="location.href='checkout.html';" style="width:200px; background-color: white;">Checkout</button></center>
+        </div>
+        <div class="col-sm-1" style="background-color:white;"></div>
+      </div>
+      <br><br>
+      <center><h2>Other Recommended Styles</h2></center>
+      <div class="row">
+          <div class="col-sm-3" style="background-color:white;">
+              <img width="70%" src="images/shoes1.png" style="margin: auto; display: block;">
+          </div>
+          <div class="col-sm-3" style="background-color:white;">
+              <img width="70%" src="images/shoes2.png" style="margin: auto; display: block;">
+          </div>
+          <div class="col-sm-3" style="background-color:white;">
+              <img width="70%" src="images/shoes3.png" style="margin: auto; display: block;">
+          </div>
+          <div class="col-sm-3" style="background-color:white;">
+              <img width="70%" src="images/shoes4.png" style="margin: auto; display: block;">
+          </div>
+      </div>
+    </div>
+    <br><br>
+
+    </body>
+</html>

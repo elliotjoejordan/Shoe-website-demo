@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Web Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+        <link href="sticky-footer-navbar.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: white;
+                font-family: font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                font:Georgia;
+                padding-top: 13px;
+            }
+            #to{
+                colour:#A9A9A9;
+                display:none;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            p {word-wrap:break-word;}
+            hr {
+                margin: 2px 0;
+                border: 2px solid #A9A9A9;
+            }
+            @media screen and (max-width: 350px) {
+                body {
+                    padding-left: 0px;
+                }
+            }
+        </style>
+        <script language="javascript">
+        function changeImage() {
+            if (document.getElementById("imgClickAndChange").src == "file:///Users/elliotjordan/Desktop/AND_Digital/images/shoe.png")
+            {
+                document.getElementById("imgClickAndChange").src = "images/shoeBack.png";
+            }
+            else
+                {
+                    document.getElementById("imgClickAndChange").src = "images/shoe.png";
+                }
+            }
+</script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a style="color: #FFD700;" class="navbar-brand" href="">Golden Shoe</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                  <li><a style="color:black" href="">Browse</a></li>
+                  <li><a style="color:black"  href="">New In</a></li>
+                  <li><a style="color:black" href="bag.html">Bag</a></li>
+                  <li><a style="color:black" href="">Help</a></li>
+                  <li><a style="color:black" href=""></a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right" style="padding-left: 10px;">
+                  <li>
+                  </li>
+                  <li>
+              <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </li>
+        <li></li>
+        </ul>
+            </div>
+          </div>
+        </nav>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6" style="background-color:white;">
+            <div style="height: 5vmax"></div>
+            <img width="70%" src="images/shoe.png" style="margin: auto; display: block;" id="imgClickAndChange" onclick="changeImage()">
+            <h2>GUCCI : Ace Leather Sneakers</h2>
+            <p>$450</p>
+        </div>
+        <div class="col-sm-6" style="background-color:#FFD700; height: 100%;">
+            <div style="height: 10vmax"></div>
+            <img width="10%" src="images/bag.png">
+            <h3>Add To Bag</h3>
+            <p style="color: grey;"> incl. VAT excl. shipping costs<br>
+                item no. P00220102 </p>
+                <p>Select Size</p>
+            <select class="custom-select" style="width:200px; background-color: white;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select><br><br>
+            <button onclick="location.href='bag.html';" style="width:200px; background-color: white;">Add to Shopping Bag</button>
+            <br>
+            <br>
+            <p> <b>Shipping Today</b></p>
+            <p> Order now and receive delivery in <b>3-5 days</b></p>
+            <br>
+            <h5> style details<h4>
+            <p style="font-size: 12px;"> Gucci's Ace sneakers have all the makings of a cult classic with their intricate detailing and iconic look. The smooth white leather pair features the label's signature stripes at the side with a gold metallic embroidered bee. Panels of shining snakeskin in red and green at the heels finish the low-top pair on a statement-making note.
+            </p>
+            <ul style="font-size: 12px;">
+                <li>upper: calf leather</li>
+                <li>lining: leather</li>
+            </ul>
+            <div style="height: 5vmax"></div>
+            </div>
+      </div>
+      <br><br>
+      <center><h2>Other Recommended Styles</h2></center>
+      <div class="row">
+          <div class="col-sm-3" style="background-color:white;">
+              <img width="70%" src="images/shoes1.png" style="margin: auto; display: block;">
+          </div>
+          <div class="col-sm-3" style="background-color:white;">
+              <img width="70%" src="images/shoes2.png" style="margin: auto; display: block;">
+          </div>
+          <div class="col-sm-3" style="background-color:white;">
+              <img width="70%" src="images/shoes3.png" style="margin: auto; display: block;">
+          </div>
+          <div class="col-sm-3" style="background-color:white;">
+              <img width="70%" src="images/shoes4.png" style="margin: auto; display: block;">
+          </div>
+      </div>
+    </div>
+    <br><br>
+
+    </body>
+</html>

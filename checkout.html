@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Web Page</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+        <link href="sticky-footer-navbar.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: white;
+                font-family: font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+                font:Georgia;
+                padding-top: 13px;
+            }
+            #to{
+                colour:#A9A9A9;
+                display:none;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            p {word-wrap:break-word;}
+            hr {
+                margin: 2px 0;
+                border: 2px solid #A9A9A9;
+            }
+            @media screen and (max-width: 350px) {
+                body {
+                    padding-left: 0px;
+                }
+            }
+        </style>
+        <script language="javascript">
+        function changeImage() {
+            if (document.getElementById("imgClickAndChange").src == "file:///Users/elliotjordan/Desktop/AND_Digital/images/shoe.png")
+            {
+                document.getElementById("imgClickAndChange").src = "images/shoeBack.png";
+            }
+            else
+                {
+                    document.getElementById("imgClickAndChange").src = "images/shoe.png";
+                }
+            }
+</script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a style="color: #FFD700;" class="navbar-brand" href="index.html">Golden Shoe</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                  <li><a style="color:black" href="index.html">Browse</a></li>
+                  <li><a style="color:black"  href="index.html">New In</a></li>
+                  <li><a style="color:black" href="bag.html">Bag</a></li>
+                  <li><a style="color:black" href="index.html">Help</a></li>
+                  <li><a style="color:black" href=""></a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right" style="padding-left: 10px;">
+                  <li>
+                  </li>
+                  <li>
+              <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </li>
+        <li></li>
+      </ul>
+            </div>
+          </div>
+        </nav>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4" style="background-color:white;">
+            <div style="height: 5vmax"></div>
+            <img width="20%" src="images/bag.png" style="margin: auto; display: block;">
+            <center><h2>Welcome To Checkout!</h2></center>
+            <br><br>
+            <p> <b>Delivery</b></p>
+            <p>Order now and receive delivery in <b>1-2 days</b> with express delivery!</p>
+            <p>Orders over <b>$100</b> come with free standard delivery</p>
+            <p>Standard delivery guaruntees delivery within <b>6</b> business days</p>
+            <p> Collection in store is a free service. The payment card is required upon collection</p>
+            <p><b>Returns</b></p>
+            <p> At Golden Shoe, returns are always free within <b>20 days</b> of delivery.</p>
+            <p>Just add the label provided in your delivery to any items you want to return and send them back. Your account will then be credited within <b>7 days</b> of us recieving the return</p>
+            <br>
+        </div>
+        <div class="col-sm-8" style="background-color:#FFD700; height: 100%;">
+            <div style="height: 10vmax"></div>
+            <h3>Total : $500</h3>
+            <p style="color: grey;"> incl. VAT excl. shipping costs<br>
+            <br>
+            <br>
+            <p>Select Postage: </p>
+            <br>
+            <select class="custom-select" style="width:300px; background-color: white;">
+                <option value="1">Standard Delivery (6 days)</option>
+                <option value="2">Courier Deivery (3-4 days)</option>
+                <option value="3">Express Delivery (1-2 days)</option>
+                <option value="4">In Store Collection</option>
+            </select>
+            <br>
+            <br>
+            <button style="width:200px; background-color: white;">Order</button>
+            <br>
+            <div style="height: 20vmax"></div>
+            </div>
+      </div>
+      <br><br>
+      <center><h2>Other Recommended Styles</h2></center>
+      <div class="row">
+          <div class="col-sm-3" style="background-color:white;">
+              <img width="70%" src="images/shoes1.png" style="margin: auto; display: block;">
+          </div>
+          <div class="col-sm-3" style="background-color:white;">
+              <img width="70%" src="images/shoes2.png" style="margin: auto; display: block;">
+          </div>
+          <div class="col-sm-3" style="background-color:white;">
+              <img width="70%" src="images/shoes3.png" style="margin: auto; display: block;">
+          </div>
+          <div class="col-sm-3" style="background-color:white;">
+              <img width="70%" src="images/shoes4.png" style="margin: auto; display: block;">
+          </div>
+      </div>
+    </div>
+    <br><br>
+
+    </body>
+</html>
